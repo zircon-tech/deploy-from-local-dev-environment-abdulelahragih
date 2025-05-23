@@ -2,46 +2,28 @@
 
 ### What's this project about?
 
-Write a simple smart contract, for example a contract to store a string as a message,
-test first in local development environment, we encourage you to use (Hardhat or Truffle)
-however, if you want you can try other options, here all the options [Ethereum local development environments](https://ethereum.org/en/developers/local-environment/)
-and then deploy to any Ethereum testnet.
+This project involves creating a simple smart contract, testing it in a local Ethereum development environment using Hardhat, and preparing it for deployment to an Ethereum testnet. The smart contract developed is a `MessageStorage` contract that allows an owner to store and retrieve a string message, with access restricted to the owner. The contract has been deployed to the Sepolia testnet and can be viewed and verified on Etherscan: [https://sepolia.etherscan.io/address/0xbe48fA9c765F2291387F3C0cDf48D3e4Ff38448E](https://sepolia.etherscan.io/address/0xbe48fA9c765F2291387F3C0cDf48D3e4Ff38448E)
 
-#### Requirements 
+### Development Setup (English)
 
-- Use any Ethereum Local development environment to deploy your contract. 
-- Upload to this repo the configuration of your local environment. 
-- Update this README with a brief explanation of the project.   
-- Comment your code so your teammates at Zircon can understand it. 
-- Use external libraries if you want. 
+This project uses **Hardhat** as the local Ethereum development environment. 
 
-### List of resources
+To set up the project locally:
 
-#### General
-
-- If you use [Truffle](https://trufflesuite.com/truffle/)
-- If you use [Hardhat](https://hardhat.org/)
-
-## Unidad 3: Ethereum | Entornos de desarrollo locales -Versión en español- 🚀
-
-### ¿De qué se trata este proyecto?
-
-Escribe un smart contract sencillo por ejemplo un contrato para almacenar un string como mensaje, 
-primero realiza una prueba en el entorno de desarrollo local te alentamos a usar (Hardhat o Truffle) 
-sin embargo, si deseas puedes intentar otras opciones, aqui todas las opciones [Entornos de desarrollo locales de Ethereum](https://ethereum.org/en/developers/local-environment/)
-y luego realiza el deploy a cualquier testnet de Ethereum. 
-
-#### Requisitos
-
-- Utiliza un entorno de desarrollo local para desplegar tu contrato. 
-- Sube a este repo la configuración del pryecto. 
-- Actualiza este README con una breve explicación del proyecto. 
-- Comenta tu código para que tus compañeros de Zircon puedan entenderlo.
-- Utiliza bibliotecas externas si quieres.
-
-### Lista de recursos
-
-#### General
-
-- Si usas [Truffle](https://trufflesuite.com/truffle/)
-- Si usas [Hardhat](https://hardhat.org/)
+1.  **Clone the repository.**
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+    or if you use Yarn:
+    ```bash
+    yarn install
+    ```
+3.  **Compile the smart contracts:**
+    ```bash
+    npx hardhat compile
+    ```
+4.  **Run the tests:**
+    ```bash
+    npx hardhat test
+    ```
